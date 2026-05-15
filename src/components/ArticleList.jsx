@@ -1,19 +1,17 @@
-import React from "react";
 import Article from "./Article";
 
-function ArticleList({ articles }) {
+function ArticleList({ posts = [] }) {
   return (
-    <section>
-      <h2>Articles</h2>
-      {articles.map((article) => (
+    <main>
+      {posts.map((post) => (
         <Article
-          key={article.id}
-          title={article.title}
-          date={article.date}
-          content={article.content}
+          key={post.id}
+          title={post.title}
+          date={post.date}
+          preview={post.preview}
         />
       ))}
-    </section>
+    </main>
   );
 }
 

@@ -1,11 +1,9 @@
-import React from "react";
-
-function Article({ title, date, content }) {
+function Article({ title, date = "January 1, 1970", preview }) {
   return (
     <article>
       <h3>{title}</h3>
-      <p>{date}</p>
-      <p>{content}</p>
+      <small>{date}</small>
+      <p>{preview}</p>
     </article>
   );
 }

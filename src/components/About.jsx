@@ -1,11 +1,9 @@
-import React from "react";
-
-function About({ about }) {
+function About({ about, image = "https://via.placeholder.com/215" }) {
   return (
-    <section>
-      <h2>About</h2>
+    <aside>
+      <img src={image} alt="blog logo" />
       <p>{about}</p>
-    </section>
+    </aside>
   );
 }
 

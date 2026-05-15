@@ -1,31 +1,34 @@
-import logo from "../assets/logo";
-
-const blogData = {
-  name: "Underreacted",
-  image: logo,
-  about: "A blog about learning React",
+const blog = {
+  name: "My Personal Blog",
+  about:
+    "Welcome to my personal blog! Here I share my thoughts on web development, React, and everything in between.",
+  image: "https://via.placeholder.com/215",
   posts: [
     {
       id: 1,
-      title: "Components 101",
-      date: "December 15, 2020",
-      preview: "Setting up the building blocks of your site",
-      minutes: 5,
+      title: "Getting Started with React",
+      date: "January 10, 2024",
+      preview:
+        "React is a JavaScript library for building user interfaces. In this post, we explore the basics of components, props, and state.",
+      minutesToRead: 5,
     },
     {
       id: 2,
-      title: "React Data Flow",
-      date: "December 11, 2020",
-      preview: "Passing props is never passé",
-      minutes: 15,
+      title: "Understanding Props",
+      date: "February 3, 2024",
+      preview:
+        "Props allow you to pass data from parent components to child components. They make your components dynamic and reusable.",
+      minutesToRead: 8,
     },
     {
       id: 3,
-      title: "Function vs Class Components",
-      preview: "React, meet OOJS.",
-      minutes: 47,
+      title: "Component Hierarchy",
+      date: "March 15, 2024",
+      preview:
+        "Designing a clean component tree is essential to building scalable React applications. Let's break down how to think about structure.",
+      minutesToRead: 12,
     },
   ],
 };
 
-export default blogData;
+export default blog;

@@ -1,10 +1,7 @@
-import React from "react";
-
-function Header({ title, author }) {
+function Header({ name }) {
   return (
     <header>
-      <h1>{title}</h1>
-      <p>By {author}</p>
+      <h1>{name}</h1>
     </header>
   );
 }
